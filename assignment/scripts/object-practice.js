@@ -17,6 +17,7 @@ const me = {
   // TODO - add properties here
 };
 console.log('A little about me:', me);
+// Testing to see if var 'me' shows all properties of it.
 
 /* 2. Accessing object properties.
   - Create a variable called fullName 
@@ -24,14 +25,17 @@ console.log('A little about me:', me);
     created above to set its value. 
   - Console.log fullName
 */
-
-
+let fullName = me.firstName + me.lastName;
+console.log(`Should show my full name if done correctly: ${fullName}!`);
+// Testing to see if var 'fullName' adds both object properties together.
 
 /* 3. Nested arrays
   - Console.log your first favorite food
   - Console.log your last favorite food 
 */
-
+console.log(`This should show "pot roast" if done correctly: ${me.favThreeFoods[0]}`);
+console.log(`This should show "pizza" if done correctly: ${me.favThreeFoods[me.favThreeFoods.length-1]}`);
+// Testing to see if accessing certain oject properties is working properly.
 
 
 /* 4. Change a property of an existing object.
